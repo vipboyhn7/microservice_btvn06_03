@@ -13,5 +13,6 @@
     <modules>
         <module>discovery-service</module>
         <module>patient-service</module>
+        <module>doctor-service</module>
     </modules>
 </project>

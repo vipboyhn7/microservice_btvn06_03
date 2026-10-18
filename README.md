@@ -4,6 +4,7 @@
 
 - `discovery-service`: Eureka service registry on port `8761`.
 - `patient-service`: Patient API on port `8081`, registered with Eureka.
+- `doctor-service`: Doctor API on port `8082`, registered with Eureka.
 
 ## Run the services
 
@@ -20,3 +21,12 @@ Then start the patient service in another terminal:
 cd patient-service
 mvn spring-boot:run
 ```
+
+Start the doctor service in a third terminal:
+
+```bash
+cd doctor-service
+mvn spring-boot:run
+```
+
+The doctor list is available at `http://localhost:8082/api/v1/doctors`.
